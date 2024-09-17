@@ -246,4 +246,3 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
-/AsriATS/Presentation/AsriATS.WebAPI/appsettings.json
