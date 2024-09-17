@@ -7,24 +7,23 @@ namespace AsriATS.Persistance
 {
     public class AppDbContext : IdentityDbContext<AppUser, AppRole, string>
     {
-        private readonly IConfiguration _configuration;
+        // private readonly IConfiguration _configuration;
 
-        // public AppDbContext()
-        // {
+        public AppDbContext()
+        {
             
-        // }
+        }
 
-        public AppDbContext(DbContextOptions<AppDbContext> options, IConfiguration configuration)
+        public AppDbContext(DbContextOptions<AppDbContext> options)
             : base(options)
         {
-            _configuration = configuration;
+            // _configuration = configuration;
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var connection = _configuration.GetConnectionString("DefaultConnection");
-
-            optionsBuilder.UseNpgsql(connection);
+            // var connection = _configuration.GetConnectionString("DefaultConnection");
+            // optionsBuilder.UseNpgsql(connection);
             // optionsBuilder.UseLazyLoadingProxies();
         }
 
