@@ -34,8 +34,6 @@ namespace AsriATS.Persistance
         public DbSet<Request> Requests { get; set; }
         public DbSet<WorkflowAction> WorkflowActions { get; set; }
         public DbSet<NextStepRule> NextStepsRules { get; set; }
-        public DbSet<Company> Companys { get; set; }
-
         public DbSet<Company> Companies { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
