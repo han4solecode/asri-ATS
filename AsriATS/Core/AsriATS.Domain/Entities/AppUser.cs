@@ -21,5 +21,9 @@ namespace AsriATS.Domain.Entities
         public string Sex { get; set; }
         public virtual ICollection<WorkflowAction> WorkflowActions { get; set; } = new List<WorkflowAction>();
         public virtual ICollection<Process> Processes { get; set; } = new List<Process>();
+
+        // reference to Company
+        public int? CompanyId { get; set; }
+        public Company? CompanyIdNavigation { get; set; }
     }
 }
